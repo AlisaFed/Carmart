@@ -1,10 +1,16 @@
-import Header from './components/header/header';
+import Main from './components/cards';
+import { Provider } from 'react-redux';
+import store from './store';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-    </div>
+    <>
+      <Provider store={store}>
+        <div className="App">
+          <Main />
+        </div>
+      </Provider>
+    </>
   );
 }
 
