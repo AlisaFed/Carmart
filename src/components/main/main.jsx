@@ -1,8 +1,8 @@
 import React from 'react';
-import './cards.scss';
+import './main.scss';
 import { useDispatch, useSelector } from 'react-redux';
-import Articles from './articles';
-import { searchChange } from '../redux/searchSlice';
+import Card from '../card/card';
+import { searchChange } from '../../redux/searchSlice';
 
 const Main = () => {
   const dispatch = useDispatch();
@@ -53,7 +53,7 @@ const Main = () => {
       <div className="main">
         {setcards.map((result) => {
           return (
-            <Articles result={result} key={result._id} />
+            <Card result={result} key={result._id} />
           );
         })}
       </div>
