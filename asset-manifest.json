@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Carmart/static/css/main.b185eece.css",
-    "main.js": "/Carmart/static/js/main.3cd07262.js",
+    "main.css": "/Carmart/static/css/main.a5a3efd4.css",
+    "main.js": "/Carmart/static/js/main.f3074f23.js",
     "static/js/787.7fa7beba.chunk.js": "/Carmart/static/js/787.7fa7beba.chunk.js",
     "index.html": "/Carmart/index.html",
-    "main.b185eece.css.map": "/Carmart/static/css/main.b185eece.css.map",
-    "main.3cd07262.js.map": "/Carmart/static/js/main.3cd07262.js.map",
+    "main.a5a3efd4.css.map": "/Carmart/static/css/main.a5a3efd4.css.map",
+    "main.f3074f23.js.map": "/Carmart/static/js/main.f3074f23.js.map",
     "787.7fa7beba.chunk.js.map": "/Carmart/static/js/787.7fa7beba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b185eece.css",
-    "static/js/main.3cd07262.js"
+    "static/css/main.a5a3efd4.css",
+    "static/js/main.f3074f23.js"
   ]
 }
