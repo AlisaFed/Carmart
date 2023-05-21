@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import "./slider.scss";
+import sliderStyles from './slider.module.scss';
 
 const CardSlider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -49,18 +49,18 @@ const CardSlider = ({ images }) => {
   };
 
   return (
-    <div className="slider"       
+    <div className={sliderStyles.slider}       
     onMouseDown={handleMouseDown}
     onTouchStart={handleTouchStart}
     onMouseUp={handleMouseDown}
     onTouchEnd={handleTouchEnd}>
-      <div className="slider-container" ref={containerRef} style={transformStyle}>
+      <div className={sliderStyles.slidercontainer} ref={containerRef} style={transformStyle}>
         {images.map((image, index) => (
           <img
             key={index}
             src={image.url}
             alt={`Slide ${index + 1}`}
-            className="slider-image"
+            className={sliderStyles.sliderimage}
             style={{ width: `${slideWidth}px`}}
           />
         ))}

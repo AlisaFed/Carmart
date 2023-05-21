@@ -1,5 +1,5 @@
 import React from 'react';
-import './main.scss';
+import mainStyles from'./main.module.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import Card from '../card/card';
 import { searchChange } from '../../redux/searchSlice';
@@ -39,8 +39,8 @@ const Main = () => {
 
   return (
     <>
-      <header className="header">
-        <select className='select' onChange={handleChange}>
+      <header className={mainStyles.header}>
+        <select className={mainStyles.select} onChange={handleChange}>
           <option value="">Марка</option>
           <option value="Audi">Audi</option>
           <option value="Mitsubishi">Mitsubishi</option>
@@ -50,7 +50,7 @@ const Main = () => {
           <option value="Hyundai">Hyundai</option>
         </select>
       </header>
-      <div className="main">
+      <div className={mainStyles.main}>
         {setcards.map((result) => {
           return (
             <Card result={result} key={result._id} />
